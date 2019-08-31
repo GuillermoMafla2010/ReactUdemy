@@ -1,0 +1,48 @@
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="http://fback.com.ec/wp1/wp-content/uploads/2014/03/udla1.png" width="100" height="50" class="d-inline-block align-top" alt="">
+    Bienvenido a la Aplicacion de Tesis
+  </a>
+</nav>
+
+<div class="jumbotron jumbotron-fluid mt-1">
+  <div class="container">
+    <h2 class="display-4 text-center">Lectura de Sensores</h2>
+    <p class="lead text-center"> Los datos de los sensores son actualizados constantemente </p>
+  </div>
+</div>
+
+<h3 class="text-center" *ngIf="estudiante">Sensores en IOT detectados: {{estudiante.length}}</h3>
+
+<div class="container-fluid mt-2">
+
+
+    <table class="table" >
+        <thead class="thead-dark" >
+          <tr >
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <th scope="col">Pais</th>
+            <th scope="col">Ver Alumno</th>
+
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of estudiante">
+            <th scope="row">{{item.id}}</th>
+
+            <td>{{item.nombre}}</td>
+            <td>{{item.apellido}}</td>
+            <td>{{item.paises.nombre}}</td>
+            <td><button class="btn btn-primary" [routerLink]="['ver',item.id]">Ver Alumno</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+
+</div>

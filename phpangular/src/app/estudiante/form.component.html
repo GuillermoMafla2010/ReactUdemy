@@ -1,0 +1,14 @@
+<div>
+
+  <form (ngSubmit)="create()">
+Nombre:<input type="text" [(ngModel)]="estudiante.nombre" name="nombre" />
+Apellido:<input type="text" [(ngModel)]="estudiante.apellido" name="apellido" />
+Edad:<input type="text" [(ngModel)]="estudiante.edad" name="edad" />
+Correo:<input type="text" [(ngModel)]="estudiante.email" name="email" />
+Fecha de Nacimiento:<input type="text" [(ngModel)]="estudiante.fecha_nacimiento" name="fecha_nacimiento" />
+
+<input type="submit" value="Enviar"/>
+  </form>
+
+
+</div>

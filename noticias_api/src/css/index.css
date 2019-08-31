@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #039be5;
+  }
+  .card-content h3 {
+    font-size: 1.4rem;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor-noticias {
+    padding: 2rem;
+    border-radius: 1rem;  
+    margin-top: 3rem;
+  }
+  
+  .buscador {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  .buscador label {
+    font-size: 2rem;
+    color: black;
+  }
+  .dropdown-content li>span {
+    color: black;
+  }
+  .select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #e64a19!important;
+  }
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .enviar input[type="submit"] {
+    width: 100%;
+  }
+
+  .container-white { width: 500px; height: 100px; margin-top: 50px; margin-left: auto; margin-right: auto;   
+  
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  .col-md-4{
+    margin:border 1px
+  }

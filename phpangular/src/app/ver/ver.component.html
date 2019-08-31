@@ -1,0 +1,17 @@
+
+
+<div *ngIf="estudiante">
+<h1>Detalle del cliente</h1>
+
+<ul>
+  <li>
+    {{estudiante.nombre}} {{estudiante.apellido}}
+
+    {{estudiante.email}}
+    {{estudiante.edad}}
+
+  </li>
+
+  <button [routerLink]="['']">Ir al Inicio</button>
+</ul>
+</div>
